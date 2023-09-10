@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>information</title>
+</head>
+
+<body>
+    <div>
+        <h2>information</h2>
+        <p>Enter your information</p>
+    </div>
+    <form action="" method="POST" target="_blank" novalidate>
+        <div>
+            <label>Username</label>
+            <input type="text" required placeholder="Username" name="un">
+        </div>
+        <br>
+        <div>
+            <label>Passowrd</label>
+            <input type="password" required placeholder="Write Complex Passowrd" name="pass" minlength="4"
+                maxlength="20">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="text" autofocus placeholder="Write A Valid Email" value="email@gmail.com" name="mail">
+        </div>
+        <br>
+        <div>
+            <label>Color</label>
+            <input type="color" readonly name="color">
+        </div>
+        <br>
+        <div>
+            <label>Number</label>
+            <input disabled type="number" name="number" min="10" max="100" step="10">
+        </div>
+        <br>
+        <div>
+            <label>Range</label>
+            <input type="range" name="range" min="0" max="100" step="10" value="20">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <input id="win" type="radio" name="OS" value="windows" checked>
+            <label for="win">Windows</label>
+        </div>
+        <div>
+            <input id="lin" type="radio" name="OS" value="linux">
+            <label for="lin">Linux</label>
+        </div>
+        <div>
+            <input id="mac" type="radio" name="OS" value="mac">
+            <label for="mac">Mac</label>
+        </div>
+        <br>
+        <hr>
+        <!-- <div>
+            <input id="f" type="checkbox" name="sex" value="sex" checked>
+            <label for="f">Female</label>
+            </div>
+            <div>
+            <input id="m" type="checkbox" name="sex" value="sex">
+            <label for="m">Male</label>
+        </div> -->
+        <label for="s">Sex</label>
+        <select name="Sex" id="s">
+            <optgroup>
+                <option value="f">Female</option>
+                <option value="m">Male</option>
+            </optgroup>
+        </select>
+        <br>
+
+        <label for="a">Age</label>
+        <select name="Age" id="a">
+            <optgroup label="Female">
+                <option value="1">guy</option>
+                <option value="2">elderly</option>
+                <option value="3">child</option>
+            </optgroup>
+            <optgroup label="Male">
+                <option value="4">guy</option>
+                <option value="5">elderly</option>
+                <option value="6">child</option>
+            </optgroup>
+        </select>
+        <br>
+        <hr>
+        <textarea name="subject" cols="30" rows="10" placeholder="test text"></textarea>
+        <br>
+        <div>
+            <label>Date</label>
+            <input type="date">
+        </div>
+        <br>
+        <div>
+            <label>Month</label>
+            <input type="month">
+        </div>
+        <br>
+        <div>
+            <label>Time</label>
+            <input type="time">
+        </div>
+        <br>
+        <div>
+            <label>URL</label>
+            <input type="url">
+        </div>
+        <br>
+        <div>
+            <label>File</label>
+            <input type="file">
+        </div>
+        <br>
+        <div>
+            <label>Search</label>
+            <input type="search">
+        </div>
+        <br>
+        <input list="Programming Language" name="P_lang">
+        <label for="">Your Favorite Progrmmaing Language</label>
+        <datalist id="Programming Language">
+            <option value="C++"></option>
+            <option value="C"></option>
+            <option value="html"></option>
+            <option value="python"></option>
+            <option value="C#"></option>
+        </datalist>
+        <br>
+        <hr>
+        <input type="reset" value="reset">
+        <input type="submit" value="save">
+    </form>
+</body>
+
+</html>
